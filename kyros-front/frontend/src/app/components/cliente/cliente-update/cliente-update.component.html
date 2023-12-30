@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-title>Alterar Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Id"
+                [(ngModel)]="cliente.id" name="id" readonly>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="cliente.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço"
+                [(ngModel)]="cliente.endereco" name="endereco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF/CNPJ"
+                [(ngModel)]="cliente.cpfCnpj" name="cpfCnpj">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Data Nascimento" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Tipo Pessoa</mat-label>
+            <mat-select [(ngModel)]="cliente.tipoPessoa" name="tipoPessoa">
+                <mat-option value="Física">Física</mat-option>
+                <mat-option value="Jurídica">Jurídica</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateCliente()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,0 +1,234 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Cápsulas Nespresso 50 Unidades",
+      "descricao": "Os cafés são colhidos por pequenos produtores brasileiros.",
+      "status": 1,
+      "valorUnidade": 29.5
+    },
+    {
+      "id": 2,
+      "nome": "iPhone 11 Apple 64GB Preto 6,1” 12MP iOS",
+      "descricao": "Grave vídeos 4K com o novo sistema de câmera dupla.",
+      "status": 1,
+      "valorUnidade": 2690
+    },
+    {
+      "id": 3,
+      "nome": "Fritadeira Elétrica sem Óleo/Air Fryer Mondial",
+      "descricao": "A fritadeira elétrica chega para completar seus momentos na cozinha.",
+      "status": 1,
+      "valorUnidade": 309.43
+    },
+    {
+      "id": 4,
+      "nome": "Pneu Aro 13” 175/70R13 Goodyear 82T Touring",
+      "descricao": "Os melhors pneus para seu carro.",
+      "status": 1,
+      "valorUnidade": 307.91
+    },
+    {
+      "id": 5,
+      "nome": "Smart TV 55” UHD 4K LED Samsung 55CU7700",
+      "descricao": "Reuna a família e os amigos para assistir algum filme engraçado.",
+      "status": 1,
+      "valorUnidade": 2849.65
+    },
+    {
+      "id": 6,
+      "nome": "Cadeira Gamer Otello Preto e Vermelho",
+      "descricao": "Para você que é fanático por games.",
+      "status": 1,
+      "valorUnidade": 379.71
+    },
+    {
+      "id": 7,
+      "nome": "Sanduicheira Amvox AMS 370",
+      "descricao": "Deliciosos sanduíches com a Sanduicheira AMS 370 da Amvox.",
+      "status": 1,
+      "valorUnidade": 77.89
+    },
+    {
+      "id": 8,
+      "nome": "Fritadeira Elétrica sem óleo",
+      "descricao": "A fritadeira elétrica tem as cores preto e inox.",
+      "status": 1,
+      "valorUnidade": 743.07
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João da Silva",
+      "dataNascimento": "2000-10-30",
+      "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+      "cpfCnpj": "95496635900",
+      "tipoPessoa": "fisica",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/clientes/1"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Maria da Silva",
+      "dataNascimento": "1999-10-21",
+      "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+      "cpfCnpj": "51408596377",
+      "tipoPessoa": "fisica",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/clientes/1"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nome": "José Souza",
+      "dataNascimento": "2002-11-20",
+      "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+      "cpfCnpj": "09033499576",
+      "tipoPessoa": "fisica",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/clientes/1"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Sebastião Martins",
+      "dataNascimento": "1998-01-31",
+      "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+      "cpfCnpj": "92167733402",
+      "tipoPessoa": "fisica",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/clientes/1"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Manoel Lima",
+      "dataNascimento": "1980-11-30",
+      "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+      "cpfCnpj": "05134683000193",
+      "tipoPessoa": "juridica",
+      "_links": {
+        "self": {
+          "href": "http://localhost:8080/clientes/1"
+        }
+      }
+    }
+  ],
+  "lancamentos": [
+    {
+      "id": 1,
+      "cliente": {
+        "id": 1,
+        "nome": "João da Silva",
+        "dataNascimento": "2000-10-30T21:10:00Z",
+        "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+        "cpfCnpj": "95496635900",
+        "tipoPessoa": "fisica"
+      },
+      "produto": {
+        "id": 6,
+        "nome": "Cadeira Gamer Otello Preto e Vermelho",
+        "descricao": "Para você que é fanático por games.",
+        "status": 1,
+        "valorUnidade": 379.71
+      },
+      "dataVenda": "2023-12-24",
+      "quantidadeVendida": 1,
+      "valorTotalVenda": 379.71
+    },
+    {
+      "id": 2,
+      "cliente": {
+        "id": 2,
+        "nome": "Maria da Silva",
+        "dataNascimento": "1999-10-21T21:10:00Z",
+        "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+        "cpfCnpj": "51408596377",
+        "tipoPessoa": "fisica"
+      },
+      "produto": {
+        "id": 3,
+        "nome": "Fritadeira Elétrica sem Óleo/Air Fryer Mondial",
+        "descricao": "A fritadeira elétrica chega para completar seus momentos na cozinha.",
+        "status": 1,
+        "valorUnidade": 309.43
+      },
+      "dataVenda": "2023-12-23",
+      "quantidadeVendida": 1,
+      "valorTotalVenda": 309.43
+    },
+    {
+      "id": 3,
+      "cliente": {
+        "id": 3,
+        "nome": "José Souza",
+        "dataNascimento": "2002-11-20T21:10:00Z",
+        "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+        "cpfCnpj": "09033499576",
+        "tipoPessoa": "fisica"
+      },
+      "produto": {
+        "id": 1,
+        "nome": "Cápsulas Nespresso 50 Unidades",
+        "descricao": "Os cafés são colhidos por pequenos produtores brasileiros.",
+        "status": 1,
+        "valorUnidade": 29.5
+      },
+      "dataVenda": "2023-12-23",
+      "quantidadeVendida": 1,
+      "valorTotalVenda": 29.5
+    },
+    {
+      "id": 4,
+      "cliente": {
+        "id": 4,
+        "nome": "Sebastião Martins",
+        "dataNascimento": "1998-01-31T21:10:00Z",
+        "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+        "cpfCnpj": "92167733402",
+        "tipoPessoa": "fisica"
+      },
+      "produto": {
+        "id": 4,
+        "nome": "Pneu Aro 13” 175/70R13 Goodyear 82T Touring",
+        "descricao": "Os melhors pneus para seu carro.",
+        "status": 1,
+        "valorUnidade": 307.91
+      },
+      "dataVenda": "2023-12-23",
+      "quantidadeVendida": 1,
+      "valorTotalVenda": 307.91
+    },
+    {
+      "cliente": {
+        "id": 2,
+        "nome": "Maria da Silva",
+        "dataNascimento": "1999-10-21",
+        "endereco": "Rua Afonso Pena 2000, Centro - Uberlândia",
+        "cpfCnpj": "51408596377",
+        "tipoPessoa": "fisica"
+      },
+      "produto": {
+        "id": 2,
+        "nome": "iPhone 11 Apple 64GB Preto 6,1” 12MP iOS",
+        "descricao": "Grave vídeos 4K com o novo sistema de câmera dupla.",
+        "status": 1,
+        "valorUnidade": 2699
+      },
+      "dataVenda": "2023-12-26",
+      "quantidadeVendida": "2",
+      "valorTotalVenda": 5398,
+      "id": 6
+    }
+  ]
+}

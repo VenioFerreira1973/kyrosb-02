@@ -1,0 +1,28 @@
+version: "3.9"
+
+networks:
+  kyros-network:
+    driver: bridge
+  
+services:
+  kyros-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3307:3306"
+    networks:
+      - kyros-network
+      
+  kyros-api:
+    build: .
+    command: ["/wait-for-it.sh", "kyros-mysql:3306", "-t", "30", "--", "java", "-jar", "api.jar"]
+    environment:
+      DB_HOST: kyros-mysql
+    ports: 
+      - "8080:8080"
+    networks:
+      - kyros-network
+    depends_on:
+      - kyros-mysql
+      

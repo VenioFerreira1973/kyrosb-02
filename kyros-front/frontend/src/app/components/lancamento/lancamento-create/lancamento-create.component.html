@@ -1,0 +1,48 @@
+<mat-card>
+    <mat-card-title>Novo Lancamento</mat-card-title>
+    <form>
+
+          <mat-form-field>
+            <mat-label>Cliente</mat-label>
+            <mat-select placeholder="Selecione um Cliente" [(ngModel)]="lancamento.cliente" name="cliente" required>
+              <mat-option *ngFor="let cliente of clientesLista" [value]="cliente">
+                {{ cliente.nome }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          
+          <mat-form-field>
+            <mat-label>Produto</mat-label>
+            <mat-select placeholder="Selecione um Produto" [(ngModel)]="lancamento.produto" name="produto" required>
+              <mat-option *ngFor="let produto of produtosLista" [value]="produto">
+                {{ produto.nome }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Data Venda" [(ngModel)]="lancamento.dataVenda" name="dataVenda">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+       
+       
+        <mat-form-field>
+          <input matInput placeholder="Quantidade Vendida" [(ngModel)]="lancamento.quantidadeVendida"
+            name="quantidadeVendida" required (ngModelChange)="calcularValorTotal()">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Valor Total Venda" [(ngModel)]="lancamento.valorTotalVenda" name="valorTotalVenda"readonly>
+        </mat-form-field>
+        
+    </form>
+    
+    <button mat-raised-button (click)="createLancamentoInput()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

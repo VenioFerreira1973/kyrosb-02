@@ -1,0 +1,60 @@
+<div class="mat-elevation-z4">
+    <table mat-table [dataSource]="lancamentos">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+      </ng-container>
+
+      <!-- Id Cliente Column -->
+      <ng-container matColumnDef="nomeCliente">
+        <th mat-header-cell *matHeaderCellDef>Nome Cliente</th>
+        <td mat-cell *matCellDef="let row">{{row.cliente.nome}}</td>
+      </ng-container>
+
+      <!-- Id Produto Column -->
+      <ng-container matColumnDef="nomeProduto">
+        <th mat-header-cell *matHeaderCellDef>Nome Produto</th>
+        <td mat-cell *matCellDef="let row">{{row.produto.nome}}</td>
+      </ng-container>
+      
+      <!-- Quantidade Vendida Column -->
+      <ng-container matColumnDef="quantidadeVendida">
+        <th mat-header-cell *matHeaderCellDef>Quantidade Vendida</th>
+        <td mat-cell *matCellDef="let row">{{row.quantidadeVendida}}</td>
+      </ng-container>
+
+      <!-- Data Venda Column -->
+      <ng-container matColumnDef="dataVenda">
+        <th mat-header-cell *matHeaderCellDef>Data Venda</th>
+        <td mat-cell *matCellDef="let row">{{row.dataVenda}}</td>
+      </ng-container>  
+  
+      <!-- Valor Total Venda Column -->
+      <ng-container matColumnDef="valorTotalVenda">
+        <th mat-header-cell *matHeaderCellDef>Valor Total Venda</th>
+        <td mat-cell *matCellDef="let row">{{row.valorTotalVenda}}</td>
+      </ng-container>
+
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>Ações</th>
+        <td mat-cell *matCellDef="let row">
+          <a routerLink="/lancamentos/update/{{ row.id }}" class="edit">
+            <i class="material-icons">
+              edit
+            </i>
+          </a>
+          <a routerLink="/lancamentos/delete/{{ row.id }}" class="delete">
+            <i class="material-icons">
+              delete
+            </i>
+          </a>
+        </td>
+      </ng-container>
+      
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+    </table>
+  </div>

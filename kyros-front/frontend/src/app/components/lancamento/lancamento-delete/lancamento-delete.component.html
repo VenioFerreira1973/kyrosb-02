@@ -1,0 +1,45 @@
+<mat-card>
+    <mat-card-title>Excluir Lancamento</mat-card-title>
+    <form>
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let row">{{row.id}}</td>
+          </ng-container>
+    
+          <ng-container matColumnDef="nomeCliente">
+            <th mat-header-cell *matHeaderCellDef>Nome Cliente</th>
+            <td mat-cell *matCellDef="let row">{{row.nomeCliente}}</td>
+          </ng-container>
+    
+          <ng-container matColumnDef="nomeProduto">
+            <th mat-header-cell *matHeaderCellDef>Nome Produto</th>
+            <td mat-cell *matCellDef="let row">{{row.nomeProduto}}</td>
+          </ng-container>
+    
+          <!-- Name Column -->
+          <ng-container matColumnDef="dataVenda">
+            <th mat-header-cell *matHeaderCellDef>Data Venda</th>
+            <td mat-cell *matCellDef="let row">{{row.dataVenda}}</td>
+          </ng-container>
+      
+          <!-- Descricao Column -->
+          <ng-container matColumnDef="quantidadeVendida">
+            <th mat-header-cell *matHeaderCellDef>Quantidade Vendida</th>
+            <td mat-cell *matCellDef="let row">{{row.quantidadeVendida}}</td>
+          </ng-container>
+      
+          <!-- Status Column -->
+          <ng-container matColumnDef="valorTotalVenda">
+            <th mat-header-cell *matHeaderCellDef>Valor Total Venda</th>
+            <td mat-cell *matCellDef="let row">{{row.valorTotalVenda}}</td>
+          </ng-container>
+      
+    </form>
+    <button mat-raised-button (click)="deleteLancamento()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
