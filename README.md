@@ -1,6 +1,6 @@
 <h1>Desafio-Kyros</h1>
-<p align="center">API Rest de compras</p>
-<p align="center">Backend</p>
+<p align="center"><strong>API Rest de compras</strong></p>
+<p align="center"><strong>Backend</strong></p>
 <p align="center">
      <a alt="Java">
         <img src="https://img.shields.io/badge/Java-v12-blue.svg" />
@@ -28,7 +28,7 @@
     </a>
 </p>
 
-<p align="center">Frontend</p>
+<p align="center"><strong>Frontend</strong></p>
 <p align="center">
      <a alt="Angular">
         <img src="https://img.shields.io/badge/Angular-v9-blue.svg" />
