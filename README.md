@@ -59,7 +59,7 @@ A aplicação foi desenvolvida em Angular 9 com linguagem Typescript e integra c
 	<li>Faça um clone do projeto na sua máquina: <code>git clone [git@github.com:VenioFerreira1973/kyrosb-02.git](https://github.com/VenioFerreira1973/kyrosb-02.git)</code></li>
 	<li>No console do sistema operacional navegar para o diretório kyros-api (que é onde fica os arquivos do backend)</li> 
 	<li>Executar o comando: docker compose up (para criar os containers da API e do banco de dados Mysql)</li>
-	<li>Abra outro console para não confundir e navegue para o diretório kyros-front ( que é onde fica os arquivos do frontend)</li>
+	<li>Abra outro console para não confundir e navegue para o diretório kyros-front/frontend ( que é onde fica os arquivos do frontend)</li>
 	<li>Executar o comando: docker compose up (para criar os container da aplicação)</li>
 	<li>Acesse o browser usando a URL: <code>http://localhost:4200/</code></li>
 	<li>Pronto pode usar a aplicação</li>
